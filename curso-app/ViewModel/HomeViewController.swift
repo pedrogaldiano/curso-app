@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "tela inicial"
         loginButton.button.setTitle("Login", for: .normal)
         coursesButton.button.setTitle("Courses", for: .normal)
         exitButton.button.setTitle("Exit", for: .normal)
