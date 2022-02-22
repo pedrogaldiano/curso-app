@@ -83,7 +83,7 @@
                             <constraint firstItem="m2l-Rb-5eb" firstAttribute="top" secondItem="w6h-Ny-dev" secondAttribute="bottom" constant="40" id="zkJ-cr-QhF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tela Inicial" id="B2x-JS-WOn">
+                    <navigationItem key="navigationItem" title="Tela Inicial" largeTitleDisplayMode="never" id="B2x-JS-WOn">
                         <barButtonItem key="backBarButtonItem" title=" " id="uzW-U4-vUj"/>
                     </navigationItem>
                     <connections>
@@ -105,25 +105,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wanda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn5-xc-KkF">
-                                <rect key="frame" x="153" y="88" width="108" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_background" translatesAutoresizingMaskIntoConstraints="NO" id="qri-7g-gxj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="179"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrB-sZ-8Ic" userLabel="Info">
+                                <rect key="frame" x="0.0" y="267" width="414" height="206"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Último dia para economizar!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfE-8M-zJ2">
+                                        <rect key="frame" x="20" y="20" width="374" height="94"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amplie seus horizontes com um aprendizado global a partir de R$22,90 cada. Econmize agora e até 22 de fevereiro." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-Cp-4WT">
+                                        <rect key="frame" x="20" y="125" width="374" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="DfE-8M-zJ2" firstAttribute="top" secondItem="rrB-sZ-8Ic" secondAttribute="top" constant="20" symbolic="YES" id="Mcn-tS-B4J"/>
+                                    <constraint firstItem="Pnp-Cp-4WT" firstAttribute="trailing" secondItem="DfE-8M-zJ2" secondAttribute="trailing" id="Mu6-pC-O3H"/>
+                                    <constraint firstItem="DfE-8M-zJ2" firstAttribute="leading" secondItem="rrB-sZ-8Ic" secondAttribute="leading" constant="20" symbolic="YES" id="RPl-6h-RLx"/>
+                                    <constraint firstItem="Pnp-Cp-4WT" firstAttribute="top" secondItem="DfE-8M-zJ2" secondAttribute="bottom" constant="11" id="XA5-Nf-A64"/>
+                                    <constraint firstItem="Pnp-Cp-4WT" firstAttribute="leading" secondItem="DfE-8M-zJ2" secondAttribute="leading" id="Xoc-rS-Ley"/>
+                                    <constraint firstAttribute="trailing" secondItem="DfE-8M-zJ2" secondAttribute="trailing" constant="20" symbolic="YES" id="xdR-xB-lgF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2L1-JU-VB6"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
-                            <constraint firstItem="Qn5-xc-KkF" firstAttribute="centerX" secondItem="2L1-JU-VB6" secondAttribute="centerX" id="Vad-mx-18W"/>
-                            <constraint firstItem="Qn5-xc-KkF" firstAttribute="top" secondItem="2L1-JU-VB6" secondAttribute="top" id="kGu-UH-8UK"/>
+                            <constraint firstItem="qri-7g-gxj" firstAttribute="height" secondItem="E3g-xx-oS4" secondAttribute="height" multiplier="0.2" id="0Jo-zu-fRe"/>
+                            <constraint firstItem="rrB-sZ-8Ic" firstAttribute="centerX" secondItem="qri-7g-gxj" secondAttribute="centerX" id="ANT-U4-qWR"/>
+                            <constraint firstItem="rrB-sZ-8Ic" firstAttribute="top" secondItem="qri-7g-gxj" secondAttribute="bottom" id="LJj-Mz-Yud"/>
+                            <constraint firstItem="qri-7g-gxj" firstAttribute="top" secondItem="2L1-JU-VB6" secondAttribute="top" id="Ylo-6b-cUu"/>
+                            <constraint firstItem="rrB-sZ-8Ic" firstAttribute="height" secondItem="E3g-xx-oS4" secondAttribute="height" multiplier="0.233259" constant="-3" id="apN-Nj-E26"/>
+                            <constraint firstItem="qri-7g-gxj" firstAttribute="width" secondItem="E3g-xx-oS4" secondAttribute="width" id="iWP-TZ-Oyd"/>
+                            <constraint firstItem="qri-7g-gxj" firstAttribute="centerX" secondItem="2L1-JU-VB6" secondAttribute="centerX" id="yXb-QD-6KA"/>
+                            <constraint firstItem="rrB-sZ-8Ic" firstAttribute="width" secondItem="qri-7g-gxj" secondAttribute="width" id="z0n-Lh-rnZ"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="SGu-Gk-h8g">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SGu-Gk-h8g">
                         <barButtonItem key="backBarButtonItem" title="Item" id="wSr-Y5-IWN"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="Pnp-Cp-4WT" id="eEk-Yh-Vgm"/>
+                        <outlet property="titleLabel" destination="DfE-8M-zJ2" id="TpS-zV-MPj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eo-PG-vN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +166,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dark_background" width="836" height="661"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

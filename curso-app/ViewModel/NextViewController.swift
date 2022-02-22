@@ -8,11 +8,13 @@
 import UIKit
 
 class NextViewController: UIViewController {
-
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var detailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "pink"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        print("chegou na next controller")
+        title = "Wanda"
+        titleLabel.text = "Bananas de pijamas"
+        detailLabel.text = "Pensa num desenho peculiar"
     }
 }
