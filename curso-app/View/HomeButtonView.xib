@@ -17,25 +17,14 @@
             <rect key="frame" x="0.0" y="0.0" width="235" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-pg-Vpx">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-pg-Vpx">
                     <rect key="frame" x="0.0" y="0.0" width="235" height="64"/>
+                    <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
-                        <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
-                            <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </backgroundConfiguration>
-                        <attributedString key="attributedTitle">
-                            <fragment content="Button">
-                                <attributes>
-                                    <font key="NSFont" size="36" name="Avenir-Heavy"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </buttonConfiguration>
                     <connections>
-                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="quZ-1z-E31"/>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="Z5m-ob-gSr"/>
                     </connections>
                 </button>
             </subviews>
