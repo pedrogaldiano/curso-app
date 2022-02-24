@@ -14,7 +14,7 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Wanda"
-        titleLabel.text = "Bananas de pijamas"
-        detailLabel.text = "Pensa num desenho peculiar"
+//        titleLabel.text = "Bananas de pijamas"
+//        detailLabel.text = "Pensa num desenho peculiar"
     }
 }

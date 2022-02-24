@@ -110,7 +110,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrB-sZ-8Ic" userLabel="Info">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrB-sZ-8Ic" userLabel="Promocao">
                                 <rect key="frame" x="0.0" y="267" width="414" height="206"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Último dia para economizar!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfE-8M-zJ2">
@@ -131,9 +131,27 @@
                                     <constraint firstItem="DfE-8M-zJ2" firstAttribute="top" secondItem="rrB-sZ-8Ic" secondAttribute="top" constant="20" symbolic="YES" id="Mcn-tS-B4J"/>
                                     <constraint firstItem="Pnp-Cp-4WT" firstAttribute="trailing" secondItem="DfE-8M-zJ2" secondAttribute="trailing" id="Mu6-pC-O3H"/>
                                     <constraint firstItem="DfE-8M-zJ2" firstAttribute="leading" secondItem="rrB-sZ-8Ic" secondAttribute="leading" constant="20" symbolic="YES" id="RPl-6h-RLx"/>
+                                    <constraint firstAttribute="height" constant="206" id="WOG-bh-CYr"/>
                                     <constraint firstItem="Pnp-Cp-4WT" firstAttribute="top" secondItem="DfE-8M-zJ2" secondAttribute="bottom" constant="11" id="XA5-Nf-A64"/>
                                     <constraint firstItem="Pnp-Cp-4WT" firstAttribute="leading" secondItem="DfE-8M-zJ2" secondAttribute="leading" id="Xoc-rS-Ley"/>
                                     <constraint firstAttribute="trailing" secondItem="DfE-8M-zJ2" secondAttribute="trailing" constant="20" symbolic="YES" id="xdR-xB-lgF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaD-Op-YsS" userLabel="Destaques">
+                                <rect key="frame" x="0.0" y="481" width="414" height="332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destaques" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-Df-ASO">
+                                        <rect key="frame" x="20" y="20" width="158.5" height="47"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nhB-Df-ASO" secondAttribute="trailing" constant="235.5" id="BKd-Ym-yt5"/>
+                                    <constraint firstItem="nhB-Df-ASO" firstAttribute="leading" secondItem="gaD-Op-YsS" secondAttribute="leading" constant="20" symbolic="YES" id="MAH-NM-Mnb"/>
+                                    <constraint firstItem="nhB-Df-ASO" firstAttribute="top" secondItem="gaD-Op-YsS" secondAttribute="top" constant="20" symbolic="YES" id="yQg-Ni-yCG"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -142,10 +160,14 @@
                         <constraints>
                             <constraint firstItem="qri-7g-gxj" firstAttribute="height" secondItem="E3g-xx-oS4" secondAttribute="height" multiplier="0.2" id="0Jo-zu-fRe"/>
                             <constraint firstItem="rrB-sZ-8Ic" firstAttribute="centerX" secondItem="qri-7g-gxj" secondAttribute="centerX" id="ANT-U4-qWR"/>
+                            <constraint firstItem="gaD-Op-YsS" firstAttribute="leading" secondItem="2L1-JU-VB6" secondAttribute="leading" id="HUY-ud-xeS"/>
                             <constraint firstItem="rrB-sZ-8Ic" firstAttribute="top" secondItem="qri-7g-gxj" secondAttribute="bottom" id="LJj-Mz-Yud"/>
                             <constraint firstItem="qri-7g-gxj" firstAttribute="top" secondItem="2L1-JU-VB6" secondAttribute="top" id="Ylo-6b-cUu"/>
-                            <constraint firstItem="rrB-sZ-8Ic" firstAttribute="height" secondItem="E3g-xx-oS4" secondAttribute="height" multiplier="0.233259" constant="-3" id="apN-Nj-E26"/>
+                            <constraint firstItem="2L1-JU-VB6" firstAttribute="trailing" secondItem="gaD-Op-YsS" secondAttribute="trailing" id="esp-L5-hBb"/>
                             <constraint firstItem="qri-7g-gxj" firstAttribute="width" secondItem="E3g-xx-oS4" secondAttribute="width" id="iWP-TZ-Oyd"/>
+                            <constraint firstItem="2L1-JU-VB6" firstAttribute="bottom" secondItem="gaD-Op-YsS" secondAttribute="bottom" id="mCO-XR-MDc"/>
+                            <constraint firstItem="gaD-Op-YsS" firstAttribute="top" secondItem="rrB-sZ-8Ic" secondAttribute="bottom" constant="8" symbolic="YES" id="nZB-kC-2By"/>
+                            <constraint firstItem="gaD-Op-YsS" firstAttribute="centerX" secondItem="2L1-JU-VB6" secondAttribute="centerX" id="ou5-tY-eI0"/>
                             <constraint firstItem="qri-7g-gxj" firstAttribute="centerX" secondItem="2L1-JU-VB6" secondAttribute="centerX" id="yXb-QD-6KA"/>
                             <constraint firstItem="rrB-sZ-8Ic" firstAttribute="width" secondItem="qri-7g-gxj" secondAttribute="width" id="z0n-Lh-rnZ"/>
                         </constraints>
