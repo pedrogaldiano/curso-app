@@ -25,7 +25,7 @@ class HomeButtonView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        guard let view = loadViewFromNib() else { return }
+        guard let view = self.loadViewFromNib() else { return }
         view.frame = self.bounds
         self.addSubview(view)
         contentView = view
